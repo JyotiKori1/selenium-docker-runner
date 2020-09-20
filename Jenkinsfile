@@ -1,6 +1,14 @@
 pipeline{
 agent any
 stages {
+ 
+ stage ("Pull Latest Image")
+{
+steps {
+ bat "docker pull jyotikori/todoitems-docker"
+
+}
+}
 
 stage ("Start Grid")
 {
