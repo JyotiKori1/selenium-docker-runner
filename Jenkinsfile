@@ -2,14 +2,14 @@ pipeline{
 agent any
 stages {
 
-stage ("docker up")
+stage ("Run Tests")
 {
 steps {
  bat "docker-compose up"
 
 }
 }
-stage ("docker down")
+stage ("Bring grid down")
 {
 steps {
  bat "docker-compose down"
