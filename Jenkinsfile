@@ -5,14 +5,14 @@ stages {
 stage ("Start Grid")
 {
 steps {
- bat "docker-compose up -d hub chrome firefox"
+ bat "docker-compose up -d hub firefox"
 
 }
 }
  stage ("Run Tests")
 {
 steps {
- bat "docker-compose up -d search-module"
+ bat "docker-compose up search-module"
 
 }
 }
