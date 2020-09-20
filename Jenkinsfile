@@ -16,9 +16,10 @@ steps {
 
 }
 }
-stage ("Stop Grid")
+post
 {
-steps {
+always {
+ archiveArtifacts artifacts: 'output/**'
  bat "docker-compose down"
 
 }
