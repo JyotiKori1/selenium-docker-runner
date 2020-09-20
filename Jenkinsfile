@@ -16,6 +16,7 @@ steps {
 
 }
 }
+}
 post
 {
 always {
@@ -24,8 +25,4 @@ always {
 
 }
 }
-}
-
-
-
 }
